@@ -1,1 +1,0 @@
-Bu kısımda Üniversite tarafından 15 haftalık İleri Veritabanı derslerinde işlemiş olduğumuz konular ve Oracle DB kullanarak yazmış olduğumuz temel ve ileri seviye SQL cümlecikleri ile SQL konuları yer almaktadır.
