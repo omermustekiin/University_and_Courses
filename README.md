@@ -1,7 +1,7 @@
 # Content
 
 * ADVANCED_DATA_BASE_SQL:  Bu kısımda Üniversite tarafından 15 haftalık İleri Veritabanı derslerinde işlemiş olduğumuz konular ve Oracle DB kullanarak yazmış olduğumuz temel ve ileri seviye SQL cümlecikleri ile SQL konuları yer almaktadır. İşlenilen konulara Oracle Database Design Course pdf'inden ulaşabilirsiniz.
-* 
+
 
 * CRYPTHOLOGY: Bu kısımda Üniversite tarafından aldığım Kriptoloji dersinde üzerinde durduğumuz konu başlıkları yer almaktadır.
 
