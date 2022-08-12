@@ -1,0 +1,290 @@
+Limit Rows Selected
+(Row seçimi selection, column seçimi projection)
+
+-Kayıtta sınırlandırma yoksa tüm sütunlar devreye girerek seçilir. Selection sırasında WHERE ile sağlanır.
+
+- "*" , ne kadar sütun varsa gelsin, sınırlandırma yapmıyoruz.
+
+- Alias'lar(sütun başlıkları) WHERE clause'unda kullanılmaz.
+
+
+
++SELECT employee_id, first_name, last_name 
+FROM employees;                               (istediğim sütunlar)
+-SELECT * FROM employees                      (tüm sutunlar)
+
++SELECT employee_id, first_name, last_name
+FROM employees
+WHERE employee_id=101;                      (id'si 101'e eşit olan kaydı getirdi)
+
++SELECT employee_id, first_name, last_name
+FROM employees
+WHERE employee_id >= 1;                   (operatörler kullanabilir)
+
++SELECT first_name, salary
+FROM employees
+WHERE salary <=3000;                     (BETWEEN komutu ile de küçük eşit aynı anlam ifade eder)      
+
+
+-<> or != or ^=                          (Eşit değil operatörleri)
+
+
++SELECT first_name, last_name
+FROM employees
+WHERE last_name='Taylor';             (Taylor yazarken büyük küçük harf uyumu dikkate alınmalı)
+
+
+-Büyük küçük harf duyarlılığını ortadan kaldırabiliriz(UPPER, LOWER , INITCAP)
+
+
+
+
+
+
+--DEPARTMAN NORMALİZASYON ÖDEVİ HAKKINDA--
+Foreign key, ilişkiyi kuracağım sütün hangı tabloda yer alacak?
+Department birden fazla çalışan ama çalışanın bir departmanı. Employees de olmalı.
+
+-Constraints: Check,Primary,Foreign
+
+
+
+KARŞILAŞTIRMA OPERATÖRLERİ
+
+-BETWEEN:
+-IN:
+-LIKE:
+-NULL
+-BETWEEN...AND 
+
+
+
++SELECT first_name, salary
+FROM employees
+WHERE salary BETWEEN 9000 AND 11000;             (9000 ve 11000 de dahil edilir)
+
+
++SELECT first_name, salary
+FROM employees
+WHERE salary >= 9000 AND salary <= 11000;      (üstteki ile aynı)
+
+
+
++SELECT first_name, salary
+FROM employees
+WHERE salary >= 9000
+
+
+
+
+SELECT city, state_province, country_id
+FROM locations
+WHERE country_id IN('UK','CA');
+
+WHERE country_id = 'UK' OR country_id = 'CA';               (üstteki ile aynı)
+
+
+-Bir başka operatör ile ifade ediniz?... OR kullanacaksın
+
+
+
+
+
+-LIKE ile benzerlikleri sorgulayabiliriz. Birebir eşleşeni bulmak zor olabilir.
+
+% ve _ 
+
+SELECT last_name
+FROM employees
+WHERE last_name LIKE '_o%' o harfi olsun ama 2.harf olsun. %den sonra kaç harf olması beni ilgilendirmez
+
+SELECT last_name
+FROM employees
+WHERE last_name LIKE '_O%'  büyük küçük harf uyumu var
+
+SELECT last_name
+FROM employees
+WHERE last_name LIKE '%A%'
+
+
+% veya _ benim datamın içinde olursa ne olacak?
+
+SELECT last_name
+FROM employees
+WHERE last_name LIKE '%\_R%'  ESCAPE '\'  R ve öncesinde _ olanın veri olduğunu gör, harf sayısı olarak algılama, getir.
+
+
+
+
+
+NULL
+
+-Eşittir yerine IS NULL
+
++SELECT last_name, manager_id
+FROM employees
+WHERE manager_id IS NULL;       
+
+++SELECT last_name, commission_pot
+FROM employees
+WHERE commission_pot IS NOT NULL;   
+
+
+
+
+MANTIKSAL KARŞILAŞTIRMALAR VE ÖNCELİK KURALLARI
+
+
+NOT, AND ve OR
+
+
+
++SELECT first_name, department_id, salary
+FROM employees
+WHERE department_id > 50
+
++SELECT first_name, department_id, salary
+FROM employees
+WHERE department_id> 50 AND salary > 12000; 
+
+SELECT first_name, department_id, salary
+FROM employees
+WHERE department_id > 50 OR salary > 12000;             (tek tarafı doğrulaması yeter)
+
+
+
+
+
+
+SELECT last_name, hire_date, job_id
+FROM employees
+WHERE hire_date>'01-Jan-1998' AND job-id LIKE 'SA%';    (Tarih formatı hata verir)
+
+SELECT SYSDATE FROM DUAL                                (AA/GG/YYYY)
+
+SELECT last_name, hire_date, job_id
+FROM employees
+WHERE hire_date>'Jan-01-1998' AND job_id LIKE 'SA%';    (Tarih formatı hata vermez)
+
+
+
+
+
+
+SELECT department_name, dept_manager_id, location_id
+FROM departments
+WHERE location_id=2500 OR dept_manager-id=124;  
+
+
+
+SELECT department_name, location_id
+FROM departments
+WHERE location_id NOT IN (1700,1800);    (1700, 1800 olmayanları getir)
+
+SELECT department_name, location_id
+FROM departments
+WHERE location_id IN (1700,1800);        (1700, 1800 olanları getir)
+
+
+SELECT last_name, department_id, first_name, last_name
+FROM employees
+WHERE department_id IN(50,80) AND first_name LIKE 'C%'   (AND kısmının iki tarafını birlikte oku, eğer koşul sağlanmıyorsa OR kısmı çalışır.)
+OR last_name LIKE '%m%';
+
+
+
+
+SELECT last_name, hire_date
+FROM employees
+ORDER BY hire_date;                (Hire date e göre sıralama yapar)  
+
+
+
+SELECT last_name, hire_date
+FROM employees
+ORDER BY hire_date, last_name;  (önce hire date, onun içinde de last name e göre sırala)  
+
+
+ORDER BY cümlenin sonuna yazılır. Çıktı üzerinde çalıştığı için.
+
+
+
+
+SELECT last_name, hire_date işegiriş
+FROM employees
+ORDER BY işegiriş desc, last_name;            (desc sıralama yapar buyukten kucuge?)
+
+
+SELECT edilmemiş sütunlara da order by diyebilirsin.
+
+
+
+
+SQL KOMUTLARININ İCRA SIRASI (Keywordslerin yazılış sırasından farklı olarak
+--SELECT clause FROM clause--, programlama, syntaxtaki sıralamadır)
+
+
+1)FROM ile alanı belirle.
+2)WHERE ile alanın belli bir kısmını belirtirerek alanı daralttık.
+3)SELECT ile o alanda arama yaptık.
+4)ORDER BY ile bunu bana getirirken sıralayarak getir dedik.
+
+
+
+ASCENDİNG: Küçükten büyüge, default
+DESCENDİNG: Büyükten küçüğe, ayrıca belirtilmeli.
+
+
+
+
+İNTRODUCTİON of FUNCTİONS
+
+Sinlge-Row Functionlar: İnput bir tane ise Output da 1 tanedir. Her row için 1 çıktı.   (Money --> Drink Machine --> Drink)
+Multi-Row Functionlar: İnput birden fazladır ama Output 1 tanedir.  
+
+
+
+CONCATENATİON
+
+string1 || string2 || string_n    (Sütünları birlikte getirir. Birleştirir.)    
+
+SELECT department_id ||' '|| department-name as DEPARTMENT FROM departments;
+
+
+SELECT last_name || ' Has a monthly salary of '|| salary*2 || ' dollars .' AS PAY
+ FROM employees;
+
+
+
+DISTINCT
+
+-Departmanlardan birinde hiçbir çalışan yok. Çıktıdaki tekrarları bu komut ile ortadan kaldırırız.
+
+SELECT DISTINCT department_id
+FROM employees;
+
+
+
+SECTİON 2 PRACTİCES
+
+1) Çıktıdaki tekrarları önleyen anahtar?  -DISTINCT
+2) Birden fazla sütunu bir araya getirme? -CONCATENATİON
+3) Bir karakter grubu?                    -STRİNG 
+4) Bir tablonun yapısını veren komut?     -DESC
+5) Rowları sınırlandırmak için?           -WHERE
+6)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,476 @@
+Karakterler yanyanaysa numerik (MM,YYYY)
+Kelimeyse direkt yazar (Month,Day,Year)
+DY (İlk üç harf)
+DD(Numerik)
+
+Format iki hane ay iki hane gün dört hane yıl olarak gelir apexde. (MM/DD)YYYY)
+
+SELECT TO_DATE('01-APR-2022', 'DD-MON-YYYY') İnputun formatını verdim
+FROM DUAL;
+
+SELECT TO_CHAR(TO_DATE('01-APR-2022', 'DD-MON-YYYY'),'DD-MON-YYYY') Outputun formatını/iç içe dönüşümü
+FROM DUAL;
+
+
+
+
+SELECT TO CHAR(NEXT_DAY(ADD_MONTHS(hire_date, 6),'FRIDAY'), 
+'fmDay, Month ddth, YYYY') AS "Next Evaluation"
+FROM employees;
+WHERE employee_id=100;
+
+HİRE DATE 6 AY EKLE SONRA O TARİŞHTEN ITIBAREN ILK CUMANIN GUNUNU BUL
+ SONRA O TARİHİ KARAKTERE CEVİR VE GUNU GUN OLARAK BANA VER
+
+SELECT TO CHAR(NEXT_DAY(ADD_MONTHS(hire_date, 6),'FRIDAY'), 
+'DD-MONTH_YYYY') 
+FROM employees;
+WHERE employee_id=100;
+
+
+------------NULL FUNCTİONS--------------
+
+4 ÇEŞİT NULL FUNCTİON VARDIR
+*NVL 
+*NVL2
+*NULLIF
+*COALESCE ()
+
+
+
+***NVL***
+
+Benim seçtiğim kısım null değere sahip ise ona null getirmek yerine verecegım seyı yaz
+
+SELECT country_name, internet_extension ...
+
+SELECT last_name, NVL(commission_pot, 0)
+FROM employees;
+WHERE department_id IN(80,90);
+
+
+SELECT NVL(date_of_independence, 'No Date')
+FROM wf_countries;
+
+SELECT last_name, NVL(commission_pct, 0) *250 as "Commission"
+FROM employees
+EHERE department_id IN(80,90);
+
+
+***NVL2***
+
+Nullsa 3 değilse 2.yap
+
+İlk değer null değilse ikinci değeri devreye sokar
+nvl verdiğim sutundakı deger nullsa sunu yap
+nvl2 verdıgım sutundakı deger null degılse ucuncu satırı, değilse diğerini yap
+
+SELECT last_name, salary,
+NVL2(commission_pct, salary +(salary*commission_pct),salary) as "İNCOME" eğer coms oct null ıse yerıne salary yaz, değilse su hesaplamayı yap
+FROM employees
+WHERE department_id IN(80,90); 
+
+
+
+
+***NULLIF***
+length eşitse null yap  eşit değilse 1.nın degerını basıyor
+
+SELECT first_name, LENGTH(first_name) as length fn, last_name
+LENGTH(last_name) as lenght ln, NULLIF(LENGTH(first_name))
+FROM employees
+WHERE department_id IN(80,90); 
+
+
+
+
+
+
+***COALESCE***
+
+Null olmayan değer bulana kadar kovalar
+SELECT last_name, commission_pct, salary
+COALESCE(commission_pct, salary, 10) mcs pct nullsa salary ı yaz, o da null sa 10 yaz
+FROM employees; (comission_pct null değil direkt yazdı, null olanlarda salary degerını yazdı, 10 yazması ıcın salarynın de null olması gerekırdı)
+WHERE
+
+
+
+
+------CONDİTİONAL EXPRESSİONS-------
+
+DECODE CASE, if else gibi bir karar mekanizması
+
+***CASE***
+
+CASE expr WHEN comparison_expr1 THEN return_expr1    expr degıskenı ilkine esıtse ikincsini retrun et
+
+
+SELECT last_name, department_id as "DepNo"
+CASE department_id
+WHEN 90 THEN 'Management'
+WHEN 80 THEN 'Sales'
+WHEN 60 THEN 'IT'
+ELSE 'Other dept'
+END AS "Department"
+FROM employees;
+
+***DECODE***
+
+Sıralı bir kontrol yapısıdır. CASE daha önemli.
+
+SELECT last_name, department_id as "DepNo"
+DECODE (department_id, 90,'Management', 80, 'Sales', 60, 'IT', 'Other dept') AS "Department"
+FROM employees;
+
+
+
+-----------JOİN--------------
+
+***NATURAL JOİN***
+
+-Normalizasyon  check'i için natural Join yaparız. Kayıpsız bir normalıasyon konmtrolu ıcın
+
+
+1) SELECT first_name, last_name, job_id
+FROM employees;
+
+2) SELECT job_id, job_title FROM jobs;
+
+3) SELECT first_name, last_name, job_id, job_title
+FROM employees NATURAL JOIN jobs
+WHERE department_id>80;
+
+// Job_ title ı join ediyorum. sütunları ve içerisindeki değerleri karşılaştırarak bunu yapıyor
+// desc employees;
+//desc jobs;
+//ortak sutun job_id
+
+
+
+SELECT department_name, city
+FROM departments NATURAL JOIN locations;
+
+//dep ve locations arasında bir join
+//location ıd uzerınden var olan ortak sutun uzerınden ılıskı kuruldu
+//desc departments
+//desc locations
+
+
+***CROSS JOIN***
+
+SELECT last_name, department_name
+FROM employees CROSS JOIN departments;
+
+SELECT last_name, department_name
+FROM employees departments;
+//Cross joın otomatik yaptı. WHERE veya JOIN ON, JOIN USING, NATURAL JOIN kullanırsam yapmazdı.
+
+
+-----------JOIN CLAUSES-------------
+
+SQL'ın temel aleti JOIN dir. Dağıttıklarımızı dogru bır sekılde bırlestırebilmek ıcın lazım.
+
+***USING***
+
+NATURAL JOIN aynı adı alan tum sutunları karsılastırıo. Aynıo sutunları bulup ıcındekı degerlerı eslestırıp bırlestırır
+USING de spesıfık olarak sadece su satırın değerlerını bırlestırebılıoz. Sutun secebılıyoruz.
+
+
+SELECT first_name, last_name, department_id, department_name
+FROM employees JOIN departments USING (department_id);
+
+//20 row employees da vardı 1 tanesı nulldı 19 sonuc cıktı.
+
+NATURAL JOIN DESEYDIK;
+SELECT first_name, last_name, department_id, department_name
+FROM employees JOIN departments;
+
+//Yıne 19 urettı. Ortak sutun sadece 1 tane cunku.
+
+
+
+//İkisindede olmayan şeyi usıng dersem hata verir. Usıngde kullancagım sutun ıkı kısımda da ortak olarak olması lazım.
+
+
+SELECT first_name, last_name, department_id, department_name
+FROM employees JOIN departments USING (employee_id);
+
+//USING içinde Alies almaması lazım. Hata verir.
+
+
+ALİAS ile:
+WHERE ile job id ler esıtse bunu yap dedık ve joın yapmıs olduk Cross joınden kurtulduk.
+Where olmasa 140 satır gelırdı.
+
+SELECT last_name, e.job_id, job_title
+FROM employees e, jobs j
+WHERE e.job_id = j.job_id;
+
+
+
+
+SELECT last_name, job_id, job_title             //e.job_id dersen hata verır
+FROM employees e JOIN jobs j USING(job_id)
+
+
+
+
+---ÖRNEK--------------------NATURAL JOIN VE USING ARASINDAKI FARK----------------------
+
+desc job_history; (employee job ve department ıd si var. Bunlar employee de de avrdı)
+
+SELECT first_name, last_name (sadece employeesda var) , start_date, end_date (historyden gelir)
+FROM employees NATURAL JOIN job_history
+
+
+1.) SELECT first_name, last_name, start_date, end_date
+FROM employees JOIN job_history USING (job_id)
+
+2.)SELECT first_name, last_name, start_date, end_date
+FROM employees JOIN job_history USING (job_id, employee_id)
+
+3.)SELECT first_name, last_name, start_date, end_date
+FROM employees JOIN job_history USING (job_id, employee_id, department_id)           (ortakları ekledik)
+
+
+-------------------------------------------------------------------------------------
+
+
+
+***ON***
+
+Sütunun aynı olup olmaması önemlı deıl. Farklı sutünlarda JOIN ON yapabilirim.
+
+
+desc employees; (manager_id var)
+
+desc departments; (yine manager_id vardı eskiden yanlış bir durumdu, joın ornegı gosterebılmek ıcın. Deparmenttaki manager_id, dept_manager_id olarak değiştirildi. İçindeki valuelar eşit)
+
+
+
+SELECT employee_id, manager_id, dept_manager_id
+FROM employees JOIN departments ON(manager_id=dept_manager_id)  
+
+// On ile sütunu ben soledım içindeki degerlerı eslesyosa bu sutunu bırlestır. Sütun adları farklı ama içindeki değerler aynı.
+
+
+
+SELECT employee_id, manager_id, dept_manager_id
+FROM employees NATURAL JOIN departments;
+
+//Natural joın ıle ne yapardı?
+
+
+
+
+SELECT last_name, job_title
+FROM employees e JOIN jobs j ON(e.job_id=j.job_id)
+
+//Birinin job ıdsıyle dıerınınkını eslestırdı
+
+SELECT last_name, job_title
+FROM employees e JOIN jobs j USING(job_id)
+
+//Ortak olanla da getirebildim USING ile
+
+
+
+select * from job_grades;
+
+Çalışanların grade lerini nasıl tespit edicem arlarında aynı değer olan yok. Sutun ıcındekı degerler.
+
+
+SELECT last_name, salary, grade_level, lowest_sal, highest_sal
+FROM employees JOIN job_grades ON(salary=lowest_sal);
+
+//Su gradeler arasında en dusuk kım alıyor?
+
+
+
+
+***BİRDEN FAZLA TABLONUN JOIN EDİLMESİ***
+
+SELECT last_name department_name as department, city
+
+FROM employees JOIN departments USING(department_id)
+
+
+
+
+
+USING NATURAL JOIN ARASINDAKI FARK, ALİAS İLE USING ROLÜ, 
+NATURAL VE USINGDE AYNI SUTUN DEGERLERI KARSILASTIRILIRKEN ON DA FARKLI SUTUNLAR ICINDEKI DEGERLER KARSILASTIRLABLIO.
+
+
+
+
+
+
+
+
+------------------INNER JOIN & OUTHER JOIN--------------------------
+
+INNER JOIN default değerdir. Belirtmeye gerek yok.
+
+
+
+
+//19 kayıt doner cunku birinin departmanı yok.
+SELECT e.last_name, d.ddepartment_id, d.department_name
+FROM employees e JOIN departmens d ON (e.department_id=d.department_id);
+
+
+
+
+
+//left outher dedım ve 20 kayıt döndü. Department ıd sı yok ama geldi. Outher hepsini getirsin, left outher eşleşmeyeni de getir demek.
+//FROM dan sonra employees gelmiş 1. ve department2. Left olan employees, left outher ile employeesda olup departmensda olmayanı getır dedım.
+
+a)emp de var dept te olmayanlarda dahil
+SELECT e.last_name, d.ddepartment_id, d.department_name
+FROM employees e
+LEFT OUTHER JOIN departmens d ON (e.department_id=d.department_id);
+
+a) emp de var dept te olmayanlarda dahil
+SELECT e.last_name, d.ddepartment_id, d.department_name
+FROM departments e
+RIGHT OUTHER JOIN employees d ON (e.department_id=d.department_id);
+
+//üstteki ile aynı sonucu verir.
+//Neden Ailes veririz? Department ıd lerı karsılstırablmek ıcın. Department_id ikisindede olduğu için e ve d olarak ayırmam ve onların esıtlıgını boyle kontrol edebılmem lazım
+//Left dedıgı zaman employeesa baktı, employeesda olanlar deparetmanta olmasa bile getir dedim.
+
+
+b) dept de var empt de olmayanlar da dahil
+SELECT e.last_name, d.ddepartment_id, d.department_name
+FROM departments e
+LEFT OUTHER JOIN employees d ON (e.department_id=d.department_id);
+
+b) dept de var empt de olmayanlar da dahil
+SELECT e.last_name, d.ddepartment_id, d.department_name
+FROM employees e
+RİGHT OUTHER JOIN departmens d ON (e.department_id=d.department_id);
+
+
+
+---FULL OUTHER---
+
+Hem sağ hem sol söz konusu
+
+c) Her iki tabloda da fazla olanlar gelir:
+SELECT e.last_name, d.ddepartment_id, d.department_name
+FROM employees e
+FULL OUTHER JOIN departmens d ON (e.department_id=d.department_id);
+
+***Senario***
+-Çalışanların eski işlerini göster
+
+SELECT last_name, e.job_id as "JOB", jb.job_id as "OLD JOB", end_date
+FROM employees e LEFT OUTHER JOIN job_history jh
+ON (e.employee_i = jh.employee_id);
+
+//King iş değiştirmemiş.
+//Kochar iş değiştirmiş.
+
+
+
+//OUTHER KULLANMIOSAN INNER JOIN DEFAULTdur.
+
+
+--------------------SELF JOINS-----------------------
+
+O kayıtta bulunmayan bir değere daha ulasmam gerekirse kullanırım. 
+
+
+Ahmet müdür    101
+Ali   çalışan  202  müdürünün kodu 101   ---> employees 
+
+202 id li çalışanı getir, yanında müdürünün adını da getir. Bunun için self-joın gerekir.
+
+Çalışan kodu 101 olan kim? Önce bunun cevabını bulmam gerekir
+
+
+
+SELECT worker.last_name || 'works for' || manager.last_name as "WORKS FOR"
+FROM employees worker JOIN employees manager  (2 tane ayrı tablo olusturduk zanneder sql)
+ON (worker.manager_id = manager.employee_id);
+
+
+SELECT worker.last_name || 'works for' || manager_id as "WORKS FOR"
+FROM employees 
+
+//manager id olsaydı eşleştirmeye ve joın e ihtiyac kalmazdı.
+
+
+
+
+
+
+SELECT worker.lastname, worker.manager_id, manager.last_name as "manager name"
+FROM employees worker JOIN employees manager
+ON ()
+
+
+
+ON kısmında eşleştirmeyı doğru yapmak asıl meseledir. En çok hata bu kısımda meydana gelir.
+
+
+
+----------------------HİYERARŞİK SORGULAR-------------------
+
+??????????????????????? GG
+
+King ve ona bağlı çalışanlar var. Ona bağlı çalışanların çalışanı veya çalışanları var.
+
+
+SELECT employee_id, last_name, job_id, manager_id
+FROM employees
+START WITH employee_id=100; (tablonun neresinden başlayacağm)
+CONNECT BY PRIOR employee_id=manager_id;     (Bir önceki employee id bunun manager ıd sınıe esıt oalcak)
+
+
+//100 benim manager id ye tekabül edior.
+//bir önceki employee id 101, şimdiki okuduğum kayıdn manager ıd sı 101 olsun.
+//205 bir önceki okudugun employeesi 200 ama 101 ı karsılastırıo
+
+
+//kingden başlattı yukardan aşağı kim kime bağlı çalısıo getirio.
+//102 100 e bağlı oldu sıra ona geldi dallanmalı bir yapı söz konusu.
+//141 e geçti sonra
+
+
+
+
+
+
+
+
+
+
+------EXAMPLES-------
+
+1) desc f_staffs
+  SELECT last_name, TO_CHAR(birthdate, 'Month DD, YYYY')
+FROM f_staffs;
+
+2)SELECT TO_DATE('Jan 03 04', 'Mon DD YYYY')
+FROM DUAL;
+
+
+
+Select e.first_name, e.employee_id, e.manager_id, m.first_name AS "Mng Name", m.last_name AS "Mng LastName"
+FROM employees e JOIN employees m
+ON(e.manager_id = m.employee_id)
+   
+//
+
+
+
+
+
+
+
+
+
+

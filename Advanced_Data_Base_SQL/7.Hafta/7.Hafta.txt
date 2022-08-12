@@ -1,0 +1,337 @@
+-----------------VİZE HAKKINDA--------------------
+
+7.section oracle has olan kısımlar sorulmayacak.
+--7.2 outer joın--
+
+Joın Comprasiondaki terimler ne demek hakim ol sınavda sorarmış.
+Self joın hazırlıklı olmanızı tavsiye ediyorum.
+
+Group functionslar vizeden sonra ağırlıklı olur. 3 kuralın üstünde durdu hoca not alın dedi.
+Büyük ihtimal teorik sorabilir bu konuda.
+
+Vocabulary çalışmaları sınavda çıkacak. (Bir açıklama, boşluk olacak.)
+Cevap sütunu koyacak hoca yine.
+
+iki output verir hangisi joın on hangisi natural joın e ait?
+aralarındaki fark nereden neden kaynaklanıyor?
+
+.. yı IN kullanmadan nasıl yapabilirdik?
+
+rollup, cube, groupıng sets  ve hiearsık query vizede yok.
+
+SELF JOIN cıkabilir
+
+Veri tabanı tasarımına  yönelik temel sorular çıkacak
+Pratiklerdeki vocabulary kısımları gibi çıkacak.
+
+1.Soruda 10 soru var...
+2.Soruda 5 soru var...
+3.Sorua 5 soru var...
+
+Cevaplar tek cevaba dayanacak.
+
+Tanım veya açıklama verilir.
+
+SQL deki keywordler neler
+Functionlar, textlerle işlem yaparken kullandığımız functionlar;
+"bir metinden beklenen uzunlukta bir stringi çeker. Bunun için kullnman gereken charahcter function nedir?"
+
+Doğru yanlış soruları.
+
+Veri tabanına ilgili kısımlar dönem başımdakiler yüksek puanlı olacak.
+Doğrudan doğruya sql cumlesi yazman bir iki tane istencek onlarda cok basıt temel olacak.
+
+
+Employees tablosunda sadece şu kayıtlar olduğunu kabul edelim denilip sorulacak.
+O veriler üzerinden bir sql cumlesı verılıp cıktıyı resmetmen istenecek.
+
+SQL in temel kurallarından soru gelecek.
+
+
+JOIN lere ağırlık ver. Aralarındaki farkları iyi bil.
+Bu tablolar arasında su joınler var aralarında su farklar var sebeblerı neler. 
+"Şu joınde sunlar yapılır, bu joınde bunlar yapılır...."
+
+
+Eqiual joın non-eqiual joın
+Karsılastırma operatorlerı 
+
+
+groupby cıkabılır kesın olmamakla beraber.
+
+
+Group functıonslardan hangılerı verı tpıne baglı olmadan calısır hem alfatbetik hem numerik...(MIN,MAX)
+
+
+
+
+
+
+
+
+
+-------------JOIN COMPARİSON------------- 
+
+
+Cartesian Product
+
+1) CROSS JOIN
+
+
+Equjoin (Ortak sütunların eşleştirilmesi söz konusu): 
+
+1) NATURAL JOIN: Aynı sütunların taşıdığı değer bakımından eşleştirme aranır
+2) JOIN USING: Eşleştirilecek sütunlar belirtilerek taşıdıkları değerler eşleştirilir.
+3) JOIN ON: Değerler karşılaştırılır ama ortak sütun gerekmez, sütun adları farklı olabilir.
+
+
+Non-equjoin (Farklı sütunların değerlerinin eşleştirilmesi çalışılır):
+
+1) ON:
+2) BETWEEN:
+
+-----------------------------------------------GROUP FUNCTİONS--------------------------------------------------------------------------------
+3 KURAL:
+*Group functions ignore null values
+*Group functions cannot be used in the WHERE clause
+*MIN, MAX and COUNT can be used with any data type;
+SUM, AVG, STDDEV and VARIANCE can be used only with numeric data types.
+
+
+
+Multi-row functions, input birden fazla ama output bir adet.
+
+SUM: Toplam alınır. (İnput sayısı ne olursa olsun bir adet output yani toplam çıkacaktır)
+AVG: Ortalama alınır. 
+COUNT
+MIN 
+MAX 
+STDDEV: Standart sapma.
+VARİANCE: Varyans.
+
+
+SELECT MAX(salary) FROM employees;
+
+SELECT MIN(hire_date) FROM employees;
+
+SELECT SUM(salary) FROM employees;
+
+-----------------------------------------------------------
+
+-GROUP Function'lar WHERE ile kullanılamaz : 
+SELECT last_name, last_name
+FROM employees
+WHERE salary = MIN(salary);
+
+
+SELECT ROUND(AVG(salary),2)
+FROM employees
+WHERE department_id=90;
+(GROUP function'ı select de kullandı where de kullanmadı)
+
+
+
+
+--------------------------------------------------------------
+NULL:
+
+SELECT AVG(commission_pct)
+FROM employees;
+(20 ye değil 4 e böldü. NULL değerleri görmezden geldi)
+
+
+
+---------------------------------------------------------------
+SELECT MAX(salary), MIN(salary), MIN(hire_date)
+FROM employees;
+WHERE department_id= :dept;
+
+
+
+
+---------------------------------COUNT--------------------------------------------------
+
+SELECT COUNT(job_id) FROM employees;
+(rowları saydı)
+
+SELECT COUNT(department_id) FROM employees;
+(Nulları saymadı. Group functions ignore null values)
+
+SELECT COUNT(*) FROM employees;
+(Null a bakmaz hepsini getirir bu daha doğrudur emin olmak adına )
+
+
+SELECT COUNT(*) FROM employees
+WHERE hire_date < '01-01-1996'
+
+
+SELECT COUNT(*) FROM employees
+WHERE hire_date < '01-Jan-1996'       //Hata verir numerik tarih vermediği için. Date formatı sıkıntısı. MON/DD/YYYY DD sayısal bekliodum Jan verdin
+
+
+
+---------------------------------DISTINCT--------------------------------------------------
+
+DISTINCT Sadece farklı olanları getirirdi.
+
+
+SELECT job_id FROM employees;
+SELECT DISTINCT job_id FROM employees;
+
+
+SELECT SUM(salary)
+FROM employees
+WHERE department_id=90;
+
+SELECT SUM(DISTINCT salary)
+FROM employees
+WHERE department_id=90;  // sadece farklı salaryleri topladı
+
+
+SELECT COUNT(DISTINCT job_id)
+FROM employees;
+
+SELECT DISTINCT job_id
+FROM employees;
+
+--------------------------------NVL----------------------------
+
+SELECT AVG(comission_pct) FROM employees;      //4 E BÖLER
+
+SELECT AVG(NVL(comission_pct, 0)) FROM employees;  //20 YE BÖLER
+
+
+
+
+---------------------------------------GROUP BY-- --------------------------------------------------------------------------
+GROUP BY ile vermiş olduğun sütun SELECT ediliyor olması gerekir.
+GROUP Functionslarını değişik şekillerde elde etme imkanı sağlayan bazı işlvesel fonksiyonlar
+
+WHERE ile kullanılamazlar. Çözümü HAVING
+
+ROLLUP: produce subtotal values
+CUBE: produce cross_tabulation values.
+GROUPING SETS: produce a single result set. 
+
+
+----------ROLLUP------------
+Departman bazında kırılım yapmış oldu.
+SELECT department_id, job_id, SUM(salary)
+FROM employees
+WHERE department_id < 50
+GROUP BY (department_id, job_id);      //department id ve job id toplamını aldı
+
+
+SELECT department_id, job_id, SUM(salary)
+FROM employees
+WHERE department_id < 50
+GROUP BY ROLLUP(department_id, job_id);  //Bir üst grubun toplamını aldı ve toplam çıktının da toplamını aldı.
+
+//İş dünyasında bunun terimi: KIRILIM//
+
+ 
+----------CUBE------------
+job id bazında da kırılım yapmış oldu.
+Rollup da olan kısımları alır. Üstüne ek olarak bunları tek tek alır.
+
+
+
+SELECT department_id, job_id, SUM(salary)
+FROM employees
+WHERE department_id < 50
+GROUP BY CUBE(department_id, job_id);
+
+
+----------GROUPING SETS------------
+
+SELECT department_id, job_id, SUM(salary)
+FROM employees
+WHERE department_id < 50
+GROUP BY GROUPING SETS( (department_id, manager_id), (department_id, job_id), (department_id, manager_id));
+
+ 
+SELECT department_id, job_id, SUM(salary)
+	GROUPING(department_id) AS "Dept sub total",
+	GROUPING(job_id) AS "Job sub total"
+FROM employees
+WHERE department_id < 50
+GROUP BY CUBE (department_id, job_id);
+
+//hesaplanmış bir alan ise 1 değeri veriyor, hesaplanmamış bir alansa, veri tabanından geliyorsa 0 değeri veriyor.
+
+
+
+
+
+-------------------PRATİKLER--------------------
+
+Cross Joın & Naturel Joın
+
+
+SELECT department_id, department_name, d.location_id, city
+FROM departments d, locations l
+//cross joın yaptı
+
+
+SELECT department_id, department_name, d.location_id, city
+FROM departments NATURAL JOIN locations 
+//qualifier verdiğimiz için natural joın olmaz, hata verir.
+
+
+
+
+SELECT department_id, department_name, location_id, city
+FROM departments NATURAL JOIN locations 
+WHERE department_id IN(20,50);
+
+
+SELECT department_id, department_name, location_id, city
+FROM departments NATURAL JOIN locations 
+WHERE department_id = 20 OR department_id=50;
+//OR=IN
+
+
+SELECT department_id, department_name, d.location_id, city
+FROM departments d NATURAL JOIN locations l
+ON (d.location_id = l.location_id)
+WHERE d.location_id=1400;
+
+//DÜZELTİLEN HATALAR: Where yerine on kullan, qalifier kullan, 
+
+
+
+
+SELECT cd_number, title, song_id, comments
+FROM d_play_list_items JOIN d_track_listings USING (SONG_ID)
+JOIN d_cds USING (CD_NUMBER)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,131 @@
+****10_2****
+TRY IT / SOLVE IT
+
+1) Abel ile aynı dept olmalı, Lorentzden büyük salary almalı?
+ 
+
+2) Rajs Aynı işi yapcak job_id olarak ama işe giriş tarihi davies den sonra olacak?
+	
+SELECT first_name,last_name,job_id,hire_date
+FROM employees
+WHERE job id-
+  (SELECT job_id
+   FROM employees
+   WHERE last name = 'Rajs')
+AND hire date >
+  (SELECT hire_date
+   FROM employees
+   WHERE last_name='Davies');
+
+3) SELECT name
+FROM d_events
+WHERE theme_code=
+(SELECT theme_code
+FROM d_events
+WHERE id = 100);
+
+4) SELECT
+staff_type, salary
+FROM f_staffs
+WHERE salary <
+	(SELECT salary
+	FROM f_staffs
+	WHERE staff_type = 'Cook');
+
+5) Departmanların ort ücreti getir ama Ernst'ın ücretinden fazla ise getir.
+
+SELECT ROUND (AVG (saery)) AS "Rounded AVG Salary", department_id
+FROM employees
+GROUP BY department_id
+HAVING AVG (salary) >
+	(SELECT salary
+	FROM employees
+	WHERE last_name =  'Ernst' );
+
+
+
+6) SELECT department_id, MIN(salary)
+FROM employees
+GROUP BY department_id
+HAVING MIN(salary) >
+	(SELECT MIN(salary)
+	FROM employees
+	WHERE department_id != 50);
+
+
+
+****10-3****
+
+1) -
+
+
+2) SELECT id, title, duration, artist, type_code   //2 row dönebilir bu yüzden IN kullanmalıyız multıplerow
+FROM d_songs
+WHERE type_code IN
+(SELECT code
+FROM d_types
+WHERE description = 'Jazz' OR description = 'Pop' )
+
+
+//SELECT kısmında description olsaydı napardık?
+
+
+3) SELECT last_name, salary FROM employees
+WHERE salary = ANY
+(SELECT MIN(salary) FRON employees GROUP BY department_id)
+
+
+4) -
+
+
+5) 
+
+
+6)
+
+
+7) SELECT department_id, MIN(salary)
+FROM employees
+GROUP BY department_id
+HAVING MIN(salary)<
+	(SELECT MIN(salary)
+	FROM employees
+	WHERE department_id = 50);
+
+No data found. 2500 is the min. salary for department 50,
+and other departments min. salary is greater than 2500.
+
+
+
+8)
+
+9)
+
+
+***10-4***
+
+2) SELECT h.department id, h.salary, h.last name
+FROM employees h
+WHERE h.salary =
+(SELECT MAX(s.salary)
+FROM employees s
+WHERE h.department_id = s.department id);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

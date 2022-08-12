@@ -1,0 +1,299 @@
+-DUAL:  Bir tablo olmadığı zaman, veriyi almak için kullandığımız komut.
+
++SELECT SYSDATE FROM DUAL;
++SELECT (319/29) + 12 FROM DUAL;
+
+
+----------------------------------------------------------------------------------------------------------
+
+-UPPER, LOWER, INITCAP
+
+--Örnekler--
+
++SELECT last_name 
+FROM employees 
+WHERE LOWER(last_name) = 'abel';
+
++SELECT UPPER(last_name) from employees;
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+CHARACTER MANİPULATİON FUNCTİONS:
+ 
+*SUBSTR       
+*LENGTH 
+*INSTR         (Harf kaçıncı pozisyonda)
+*LPAD | RPAD   (Solundan veya sağından tamamla. Doldur.)
+*TRIM          (Kırp)    
+*REPLACE       (Sil ve bunu koy. Veya sadece sil.)
+
+
+
+--Örnekler--
+    
++SELECT SUBSTR('HelloWorld', 1, 5)            (1. karakterden başla ve ilk 5 harfini getir)
+FROM DUAL;
+
++SELECT SUBSTR('HelloWorldsss', 6)            (6. karakterden başla ve kalanı full getir)
+FROM DUAL;
+
++SELECT SUBSTR(last_name, 1, 3)               (1. karakterden başla ve ilk 5 harfini getir)
+FROM employees;
+
+
+
++SELECT employee_id, LENGTH(last_name) Boy
+FROM employees ORDER BY Boy;
+
+
+
++SELECT INSTR('HelloWorld', 'W')             (W kaçıncı sırada?)
+FROM DUAL;
+
++SELECT last_name, INSTR(last_name 'a')       (last name bilgilerinde 'a' kaçıncı sıralarda var)
+FROM employees;
+
+
+
++SELECT LPAD('HelloWorld', 15 ,'-')     
+FROM DUAL;
+
++SELECT RPAD(last_name, 10 ,'*')     
+FROM employees;
+
+
+
++SELECT TRIM(LEADING 'a' FROM 'abcba')       (baştaki a yı kaldırır bcba olur)    
+FROM DUAL;
+
++SELECT TRIM(TRAILING 'a' FROM 'abcba')      (sondaki a yı kaldırır)
+FROM DUAL;
+
++SELECT TRIM(BOTH 'a' FROM 'abcba')           (hem baştan hem sondan kaldırır)
+FROM DUAL;
+
+
+
+
++REPLACE { string1, string_to_replace, [replacement_string] }
+
++SELECT REPLACE (last_name, 'a', '*')
+FROM employees;
+
+
+
+
+------------------------------------------------------------------------------------------------------------------
+
+SUBSTİTUTİON VARİABLES
+
++SELECT first_name, last_name, salary, department_id         (statik olarak gelir)
+FROM employees 
+WHERE department_id=10;
+
++SELECT first_name, last_name, salary, department_id        (kullanıcı seçer)
+FROM employees 
+WHERE department_id=:bolum_kodunu_gir;
+
+
+------------------------------------------------------------------------------------------------------------
+MOD??????????????????
+
+-ROUND(45.936, 0)    ==  ROUND(45.936)  == 46  
+
+-ROUND(45.926, 2)    ==  45.93                       (926 DAKİ 26 OLAN İLK 2 HANE KISMINI YUVARLADI)
+
+-TRUNC(45.936, 0)    ==  TRUNC(45.936)  == 45 
+
+
++SELECT country_name, airports, MOD(airports, 2) as "Mod Demo"
+FROM wf_countries;
+ 
+-------------------------------------------------------------------------------------------------------------
+SYSDATE
+
+SELECT last_name, hire_date, hire_date + 60 as eklenmiş    (hire_date verisine 60 gün ekler. Numerik olarak 60 eklenmez))
+FROM employees; 
+
+SELECT last_name, hire_date,                       (Hafta cinsinden çalıştığı/kıdem süresini verir)
+(SYSDATE - hire_date)/7 as Kıdem             
+FROM employees; 
+
+
+DATE FUNCTİONS
+
+*MONTHS_BETWEEN       (Numerik gelir)
+*ADD_MONTHS
+*NEXT_DAY
+*LAST_DAY
+*ROUND
+*TRUNC
+
+--Örnekler--
+
+SELECT last_name, hire_date, MONTHS_BETWEEN (SYSDATE, hire_date)                                  
+FROM employees; 
+
+SELECT last_name, hire_date, MONTHS_BETWEEN (SYSDATE, hire_date)                                  
+FROM employees; 
+WHERE MONTHS_BETWEEN
+(SYSDATE, hire_date) > 340;
+
+
+
+SELECT ADD_MONTHS (SYSDATE, 6) as "Next Year"            
+FROM DUAL; 
+
+
+
+SELECT NEXT_DAY (SYSDATE, 'Friday') as "Next Friday"            
+FROM DUAL; 
+
+
+SELECT LAST_DAY (SYSDATE) as "End of the Month"            
+FROM DUAL; 
+
+
+
+
+SELECT hire_date, ROUND(hire_date, 'Month')    (Direkt diğer ayın ilk gününü date olarak getirir)
+FROM employees
+WHERE department_id=50;
+
+
+SELECT hire_date, ROUND(hire_date, 'Year')    (Aşağı yuvarlayınca yıl değişmez, yukarı yuvarlayınca değişir))
+FROM employees
+WHERE department_id=50;
+
+
+SELECT hire_date, TRUNC(hire_date, 'Month')    
+FROM employees
+WHERE department_id=50;
+
+
+SELECT hire_date, TRUNC(hire_date, 'Year')    
+FROM employees
+WHERE department_id=50;
+
+
+
+
+SELECT employee_id, hire_date, 
+ROUND(MONTHS_BETWEEN(SYSDATE, hire_date)) as TENURE
+ADD_MONTHS(hire_date, 6) as REVİEW
+NEXT_DAY(hire_Date, 'FRİDAY'), LAST_DAY(hire_date)
+FROM employees
+WHERE MONTHS_BETWEEN (SYSDATE, hire_date) > 36;
+
+
+----------------------------------------------------------------------------------------------------------------
+ 
+DATA CONVERSİON
+
+
+SELECT hire_date, TO_CHAR (hire_date, 'Month dd, YYYY') as Biçimlendirildi
+FROM employees;
+
+SELECT hire_date, TO_CHAR (hire_date, 'fmMonth dd, YYYY')            --Formatın fm si 0 ını kaldırıyor
+FROM employees;
+
+SELECT hire_date, TO_CHAR (hire_date, 'f mDAYddthsp Mon, YYYY')    --sp spelling, th inci eki
+FROM employees;
+
+
+SELECT TO_CHAR (SYSDATE, 'hh:mm:sspm')                --pm öğle önce mi sonra mı bana bildir demek
+FROM DUAL;
+
+
+
+SELECT TO_CHAR (4500, '99,999') FROM DUAL;    (Eğer 450000 Olursa ##### ÇIKTISI VERİR)
+ 
+
+
+to_char output/çıktının formatı,
+to_number ve to_date inputun/girdinin formatıdır
+
+
+SELECT last_name, bonus, TO_NUMBER(bonus, '9999')   (Bonus içinde sayı var ama tipi varchar2. Oyuzden numb cevırmem lazım)
+As "Bonus"
+FROM employees
+WHERE department_id=80;
+
+
+
+SELECT TO_DATE('November 3, 2001', 'Month dd, yyyy') as "Tarihe_Cevirildi"
+FROM DUAL;
+
+
+ SELECT TO_DATE('25 March, 2022', 'dd Month, yyyy')       ---03/25/2022 (girdiyi formatladı)
+FROM DUAL;,
+
+ SELECT TO_CHAR(SYSDATE, 'dd Month, yyyy')               ---25 march, 2022 (çıktı formatladı))
+FROM DUAL;
+
+
+
+fx == mutlaka bunu ara, fixle
+
+ 
+SELECT TO_DATE ('27-Oct-95', 'DD-Mon-RR')           --Ben 22 deyim. 95 olsa olsa 1995 dir diye yorumlar
+as "Date"                                            --95 yerine  49 olsa 2049, 50 olsa 1950
+FROM DUAL;
+
+
+Bulunduğum yıl ve aldığım değer 0-49 ise mevcut yüzyıl
+Bulunduğum yıl 0-49 ve aldığım değer 50-99 ise önceki yüzyıl
+
+
+
+SELECT last_name, TO_CHAR (hire_date, 'DD-Mon-YY'), TO_DATE ('01-Jan-90','DD-Mon-YY') 
+FROM employees
+WHERE hire_date < TO_DATE ('01-Jan-90','DD-Mon-YY');
+
+1990 dan küçük değerleri getirmesi lazımdı. Büyük değerler de var çıktıda.
+2090 dan küçükleri kabul ettiği için.
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+'-' Olduğu zaman tam sayı kısmına bakar. -1 ise sondan bi basamağı yuvarla
+
+SELECT ROUND(30695.348,-1) as "R-1" FROM DUAL;  --30700
+
+SELECT ROUND(30695.999,-2) as "R-2" FROM DUAL;  --30700
+SELECT ROUND(30645.999,-1) as "R-1" FROM DUAL;  --30650
+
+SELECT ROUND(30650.999,-2) as "R-2" FROM DUAL;  --30700
+
+SELECT ROUND(30649.999,-2) as "R-2" FROM DUAL;  --30600
+ 
+
+
+
+SELECT TO_CHAR(SYSDATE, 'day') FROM DUAL;   --BİR TARİH HANGİ GÜNE TEKABÜL EDER?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
