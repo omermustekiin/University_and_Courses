@@ -1,10 +1,10 @@
 # Content
 
-* Advanced_Data_Base_SQL:  Bu kısımda Üniversite tarafından 15 haftalık İleri Veritabanı derslerinde işlemiş olduğumuz konular ve Oracle DB kullanarak yazmış olduğumuz temel ve ileri seviye SQL cümlecikleri ile SQL konuları yer almaktadır. İşlenilen konulara Oracle Database Design Course pdf'inden ulaşabilirsiniz.
+* ADVANCED_DATA_BASE_SQL:  Bu kısımda Üniversite tarafından 15 haftalık İleri Veritabanı derslerinde işlemiş olduğumuz konular ve Oracle DB kullanarak yazmış olduğumuz temel ve ileri seviye SQL cümlecikleri ile SQL konuları yer almaktadır. İşlenilen konulara Oracle Database Design Course pdf'inden ulaşabilirsiniz.
 
-* Crypthology: Bu kısımda Üniversite tarafından aldığım Kriptoloji dersinde üzerinde durduğumuz konu başlıkları yer almaktadır.
+* CRYPTHOLOGY: Bu kısımda Üniversite tarafından aldığım Kriptoloji dersinde üzerinde durduğumuz konu başlıkları yer almaktadır.
 
-* Computer_Graphics: Bu kısımda Üniversite tarafından aldığım Bilgisayar Grafikleri dersinde işleyip uyguladığımız konular yer almaktadır.
+* COMPUTER_GRAPHİCS: Bu kısımda Üniversite tarafından aldığım Bilgisayar Grafikleri dersinde işleyip uyguladığımız konular yer almaktadır.
 
 -Bilgisayar Grafikleri Temel Kavramları
 
@@ -26,7 +26,7 @@
 
 -Vektörel Hesaplamalar ve Işın İzleme
 
-* Computer_Networks:
+* COMPUTER_NETWORKS:
 
 Dersin İçeriği: Temel ağ kavramlarını ve tanımları, Protokol hiyerarşisi, referans modelleri, katmanlar, hata tesbiti, osi ve tcp/ip protokolleri, ağ mimarisi.
 
@@ -57,7 +57,7 @@ Günümüzde ve gelecekte ağlar
 
 5-Data Transmission
 
-* Software_Development_Standards_and_Project_Management: Bu kısımda Üniversite tarafından aldığım Yazılım Geliştirme Standartları ve Proje yönetimi dersinde işlediğimiz konular yer almaktadır.
+* SOFTWARE_DEVELOPMENT_STANDARDS_and_PROJECT_MANAGEMENT: Bu kısımda Üniversite tarafından aldığım Yazılım Geliştirme Standartları ve Proje yönetimi dersinde işlediğimiz konular yer almaktadır.
 
 1-About Project
 
@@ -97,7 +97,7 @@ Günümüzde ve gelecekte ağlar
 
 14.3 INCREMENTAL PROCESS MODELS & The Incremental Model & The RAD Model & Rapid Application
 
-* Software_Architechture_and_Design:
+* SOFTWARE_ARCHİTECHTURE_and_DESİNG:
 
 1- About Software Design & Software Architechture
 
@@ -114,6 +114,6 @@ Günümüzde ve gelecekte ağlar
 4.2- Service Oriented Architecture Pattern & Map-Reduce Pattern
 
 
-* Advanced_Java : Bu kısımda Eclipse IDE aracını kullanarak JAVA dili ile OOP ağırlıklı yazmış olduğumuz kodları ve konuları paylaşmaktayım.
+* ADVANCED_JAVA : Bu kısımda Eclipse IDE aracını kullanarak JAVA dili ile OOP ağırlıklı yazmış olduğumuz kodları ve konuları paylaşmaktayım.
 
 
