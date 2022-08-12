@@ -3,8 +3,25 @@
 * ADVANCED_DATA_BASE_SQL:  Bu kısımda Üniversite tarafından 15 haftalık İleri Veritabanı derslerinde işlemiş olduğumuz konular ve Oracle DB kullanarak yazmış olduğumuz temel ve ileri seviye SQL cümlecikleri ile SQL konuları yer almaktadır. İşlenilen konulara Oracle Database Design Course pdf'inden ulaşabilirsiniz.
 
 
+* CRYPTHOLOGY: 
 
-* CRYPTHOLOGY: Bu kısımda Üniversite tarafından aldığım Kriptoloji dersinde üzerinde durduğumuz konu başlıkları yer almaktadır.
+ -Şifreleme, Şifreli Metin Oluşturma ve Haberleşme
+
+ -Modüler Aritmetik
+
+ -Euler Fonksiyonu
+
+ -Afin Şifreler
+
+ -Blok Şifreler
+
+ -RSA Yöntemi
+
+ -Polinomlar
+
+ -Lagrance İnterpolasyonu
+
+ -Sır Paylaşımı
 
 
 * COMPUTER_GRAPHİCS: Bu kısımda Üniversite tarafından aldığım Bilgisayar Grafikleri dersinde işleyip uyguladığımız konular yer almaktadır.
