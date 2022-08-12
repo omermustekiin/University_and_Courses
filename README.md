@@ -8,7 +8,7 @@
 
 -Bilgisayar Grafikleri Temel Kavramları
 
--Doğru Çizme
+- Doğru Çizme
 
 -CBS ve Bilgisayar Grafikleri
 
