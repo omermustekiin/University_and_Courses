@@ -6,25 +6,25 @@
 
 * COMPUTER_GRAPHİCS: Bu kısımda Üniversite tarafından aldığım Bilgisayar Grafikleri dersinde işleyip uyguladığımız konular yer almaktadır.
 
--Bilgisayar Grafikleri Temel Kavramları
+  -Bilgisayar Grafikleri Temel Kavramları
 
-- Doğru Çizme
+  -Doğru Çizme
 
--CBS ve Bilgisayar Grafikleri
+  -CBS ve Bilgisayar Grafikleri
 
--DDA ve Bresenham Doğru Çizme Algoritması
+  -DDA ve Bresenham Doğru Çizme Algoritması
 
--Işıklandırma
+  -Işıklandırma
 
--OpenGL
+  -OpenGL
 
--Perspektif İzdüşüm
+  -Perspektif İzdüşüm
 
--Paralel İzdüşüm
+  -Paralel İzdüşüm
 
--Ray Tracing
+  -Ray Tracing
 
--Vektörel Hesaplamalar ve Işın İzleme
+  -Vektörel Hesaplamalar ve Işın İzleme
 
 * COMPUTER_NETWORKS:
 
