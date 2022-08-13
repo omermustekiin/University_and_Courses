@@ -3,7 +3,7 @@
 * ADVANCED_DATA_BASE_SQL:  Bu kısımda Üniversite tarafından 15 haftalık İleri Veritabanı derslerinde işlemiş olduğumuz konular ve Oracle DB kullanarak yazmış olduğumuz temel ve ileri seviye SQL cümlecikleri ile SQL konuları yer almaktadır. 
 
 
-* CRYPTHOLOGY: u kısımda Üniversite tarafından aldığım Kriptoloji dersinde işlediğimiz konular yer almaktadır.
+* CRYPTHOLOGY: Bu kısımda Üniversite tarafından aldığım Kriptoloji dersinde işlediğimiz konular yer almaktadır.
 
 
 * COMPUTER_GRAPHİCS: Bu kısımda Üniversite tarafından aldığım Bilgisayar Grafikleri dersinde işleyip uyguladığımız konular yer almaktadır.
@@ -29,7 +29,7 @@
   Veri link katmanı, hata kontrol yöntemleri (error control coding algorithms)
   Ağlarda güvenlik
   Günümüzde ve gelecekte ağlar
-  
+ 
 
 
 * SOFTWARE_DEVELOPMENT_STANDARDS_and_PROJECT_MANAGEMENT: Bu kısımda Üniversite tarafından aldığım Yazılım Geliştirme Standartları ve Proje yönetimi dersinde işlediğimiz konular yer almaktadır.
