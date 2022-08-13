@@ -5,23 +5,23 @@
 
 * CRYPTHOLOGY: 
 
- -Şifreleme, Şifreli Metin Oluşturma ve Haberleşme
+  -Şifreleme, Şifreli Metin Oluşturma ve Haberleşme
 
- -Modüler Aritmetik
+  -Modüler Aritmetik
 
- -Euler Fonksiyonu
+  -Euler Fonksiyonu
 
- -Afin Şifreler
+  -Afin Şifreler
 
- -Blok Şifreler
+  -Blok Şifreler
 
- -RSA Yöntemi
+  -RSA Yöntemi
 
- -Polinomlar
+  -Polinomlar
 
- -Lagrance İnterpolasyonu
+  -Lagrance İnterpolasyonu
 
- -Sır Paylaşımı
+  -Sır Paylaşımı
 
 
 * COMPUTER_GRAPHİCS: Bu kısımda Üniversite tarafından aldığım Bilgisayar Grafikleri dersinde işleyip uyguladığımız konular yer almaktadır.
