@@ -50,7 +50,7 @@
 
 * COMPUTER_NETWORKS:
 
-  Dersin İçeriği: Temel ağ kavramlarını ve tanımları, Protokol hiyerarşisi, referans modelleri, katmanlar, hata tesbiti, osi ve tcp/ip protokolleri, ağ mimarisi.
+  Dersin İçeriği: Temel ağ kavramları ve tanımları, Protokol hiyerarşisi, referans modelleri, katmanlar, hata tesbiti, osi ve tcp/ip protokolleri, ağ mimarisi.
 
   Dersin Amacı: Bilgisayar ağlarının kullanımı, gelişimi, hakkında temel anlayış kazandırmak, katmanlı mimari, topolojiler, protokoller ve veri haberleşmesi konularında bilgi ve beceri kazandırmak.
 
