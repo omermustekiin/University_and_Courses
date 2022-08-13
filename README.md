@@ -50,34 +50,34 @@
 
 * COMPUTER_NETWORKS:
 
-Dersin İçeriği: Temel ağ kavramlarını ve tanımları, Protokol hiyerarşisi, referans modelleri, katmanlar, hata tesbiti, osi ve tcp/ip protokolleri, ağ mimarisi.
+  Dersin İçeriği: Temel ağ kavramlarını ve tanımları, Protokol hiyerarşisi, referans modelleri, katmanlar, hata tesbiti, osi ve tcp/ip protokolleri, ağ mimarisi.
 
-Dersin Amacı: Bilgisayar ağlarının kullanımı, gelişimi, hakkında temel anlayış kazandırmak, katmanlı mimari, topolojiler, protokoller ve veri haberleşmesi konularında bilgi ve beceri kazandırmak.
+  Dersin Amacı: Bilgisayar ağlarının kullanımı, gelişimi, hakkında temel anlayış kazandırmak, katmanlı mimari, topolojiler, protokoller ve veri haberleşmesi konularında bilgi ve beceri kazandırmak.
 
-Ders Planı:
-Ağ kavramları ve tanımları, kullanım amaçları
-Ağ mimarisi ve sınıflandırması
-Protokol düzenleri (paketler ile veri aktarımı)
-Ağ katmanları ve bağlantılı (connected)/ bağlantısız (connectionless) servisler
-Ağ yazılımı içeriği, hata tesbiti
-Referans modelleri (OSI ve TCP/IP)
-Veri iletim ortamı, kablolu ve kablosuz iletişim. uydu haberleşmesi
-Veri iletim ortamı, band genişliği, temel band (baseband) ve geçiş bandı (passband) üzerinden iletim
-Ağ donanımı
-Ağ tasarımı uygulaması
-Veri link katmanı, hata kontrol yöntemleri (error control coding algorithms)
-Ağlarda güvenlik
-Günümüzde ve gelecekte ağlar
+  Ders Planı:
+  Ağ kavramları ve tanımları, kullanım amaçları
+  Ağ mimarisi ve sınıflandırması
+  Protokol düzenleri (paketler ile veri aktarımı)
+  Ağ katmanları ve bağlantılı (connected)/ bağlantısız (connectionless) servisler
+  Ağ yazılımı içeriği, hata tesbiti
+  Referans modelleri (OSI ve TCP/IP)
+  Veri iletim ortamı, kablolu ve kablosuz iletişim. uydu haberleşmesi
+  Veri iletim ortamı, band genişliği, temel band (baseband) ve geçiş bandı (passband) üzerinden iletim
+  Ağ donanımı
+  Ağ tasarımı uygulaması
+  Veri link katmanı, hata kontrol yöntemleri (error control coding algorithms)
+  Ağlarda güvenlik
+  Günümüzde ve gelecekte ağlar
 
-1-Overview of Data Communications
+  1-Overview of Data Communications
 
-2-Data Communications and Networks Overview
+  2-Data Communications and Networks Overview
 
-3-Protocol Architecture
+  3-Protocol Architecture
 
-4.2-PROTOCOLS AND ARCHITECTURE CHAPTER 2
+  4.2-PROTOCOLS AND ARCHITECTURE CHAPTER 2
 
-5-Data Transmission
+  5-Data Transmission
 
 
 * SOFTWARE_DEVELOPMENT_STANDARDS_and_PROJECT_MANAGEMENT: Bu kısımda Üniversite tarafından aldığım Yazılım Geliştirme Standartları ve Proje yönetimi dersinde işlediğimiz konular yer almaktadır.
