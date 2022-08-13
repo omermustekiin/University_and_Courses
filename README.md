@@ -29,6 +29,8 @@
   Veri link katmanı, hata kontrol yöntemleri (error control coding algorithms)
   Ağlarda güvenlik
   Günümüzde ve gelecekte ağlar
+  
+  <hr\>
 
 
 * SOFTWARE_DEVELOPMENT_STANDARDS_and_PROJECT_MANAGEMENT: Bu kısımda Üniversite tarafından aldığım Yazılım Geliştirme Standartları ve Proje yönetimi dersinde işlediğimiz konular yer almaktadır.
