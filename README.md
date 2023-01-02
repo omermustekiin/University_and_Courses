@@ -31,11 +31,16 @@
   Günümüzde ve gelecekte ağlar
  
 
-
 * SOFTWARE_DEVELOPMENT_STANDARDS_and_PROJECT_MANAGEMENT: Bu kısımda Üniversite tarafından aldığım Yazılım Geliştirme Standartları ve Proje yönetimi dersinde işlediğimiz konular yer almaktadır.
  
 * SOFTWARE_ARCHİTECHTURE_and_DESİNG: Bu kısımda Üniversite tarafından aldığım Yazılım Mimarisi ve Tasarımı dersinde işlediğimiz konular yer almaktadır.
 
 * ADVANCED_JAVA : Bu kısımda Eclipse IDE aracını kullanarak JAVA dili ile OOP ağırlıklı yazmış olduğumuz kodları ve konuları paylaşmaktayım.
+
+* YAZILIM KALİTE ve GÜVENCE TESTİ:
+
+* OYUN PROGRAMLAMA ve TASARIM:
+
+* VERİ MADENCİLİĞİ: 
 
 
