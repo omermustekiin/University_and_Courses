@@ -6,7 +6,7 @@
 * CRYPTHOLOGY: Bu kısımda Üniversite tarafından aldığım Kriptoloji dersinde işlediğimiz konular yer almaktadır.
 
 
-* COMPUTER_GRAPHİCS: Bu kısımda Üniversite tarafından aldığım Bilgisayar Grafikleri dersinde işleyip uyguladığımız konular yer almaktadır.
+* COMPUTER_GRAPHICS: Bu kısımda Üniversite tarafından aldığım Bilgisayar Grafikleri dersinde işleyip uyguladığımız konular yer almaktadır.
   
 
 * COMPUTER_NETWORKS: 
@@ -33,16 +33,13 @@
 
 * SOFTWARE_DEVELOPMENT_STANDARDS_and_PROJECT_MANAGEMENT: Bu kısımda Üniversite tarafından aldığım Yazılım Geliştirme Standartları ve Proje yönetimi dersinde işlediğimiz konular yer almaktadır.
  
-* SOFTWARE_ARCHİTECHTURE_and_DESİNG: Bu kısımda Üniversite tarafından aldığım Yazılım Mimarisi ve Tasarımı dersinde işlediğimiz konular yer almaktadır.
+* SOFTWARE_ARCHITECHTURE_and_DESİNG: Bu kısımda Üniversite tarafından aldığım Yazılım Mimarisi ve Tasarımı dersinde işlediğimiz konular yer almaktadır.
 
-* ADVANCED_JAVA : Bu kısımda Eclipse IDE aracını kullanarak JAVA dili ile OOP ağırlıklı yazmış olduğumuz kodları ve konuları paylaşmaktayım.
+* ADVANCED_JAVA: Bu kısımda Eclipse IDE aracını kullanarak JAVA dili ile OOP ağırlıklı yazmış olduğumuz kodları ve konuları paylaşmaktayım.
 
-* YAZILIM KALİTE ve GÜVENCESİ TESTİ:
+* GAME_PROGRAMMING_AND_DESİGN: Bu ders genelinde Blender aracını kullanarak 3D tasarımlar yapmayı ve Roblox Studio üzerinden oyun tasarlayıp/kodlayıp yayınlamayı öğrendim. Bu kısımda Blender ile yaptığım tasarımları ve Roblox üzerinden yayınlamış olduğum online oyuna erişip inceleyebilirsiniz.
 
-* OYUN PROGRAMLAMA ve TASARIM: Bu ders genelinde Blender aracını kullanarak 3D tasarımlar yapmayı ve Roblox Studio üzerinden oyun tasarlayıp yayınlamayı öğrendim.
-Bu kısımda Blender ile yaptığım tasarımları ve Roblox üzerinden yayınlamış olduğum online oyuna erişip inceleyebilirsiniz.
-
-* VERİ MADENCİLİĞİ: Bu kısımda Üniversite tarafından "DATA MINING Concepts and Techniques" kitabı üzerinden 
+* DATA_MINING: Bu kısımda Üniversite tarafından "DATA MINING Concepts and Techniques" kitabı üzerinden 
 15 hafta boyunca Veri Madenciliği ile ilgili işleyip uyguladığımız konular ve kitabın pdf'i yer almaktadır. 
 Ayrıca bu süreçte not tutarak oluşturduğum dökümanı incelemenizi tavsiye ederim.
 
