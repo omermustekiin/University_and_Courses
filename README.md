@@ -37,7 +37,7 @@
 
 * ADVANCED_JAVA : Bu kısımda Eclipse IDE aracını kullanarak JAVA dili ile OOP ağırlıklı yazmış olduğumuz kodları ve konuları paylaşmaktayım.
 
-* YAZILIM KALİTE ve GÜVENCE TESTİ:
+* YAZILIM KALİTE ve GÜVENCESİ TESTİ:
 
 * OYUN PROGRAMLAMA ve TASARIM:
 
