@@ -37,7 +37,8 @@
 
 * ADVANCED_JAVA: Bu kısımda Eclipse IDE aracını kullanarak JAVA dili ile OOP ağırlıklı yazmış olduğumuz kodları ve konuları paylaşmaktayım.
 
-* GAME_PROGRAMMING_AND_DESİGN: Bu ders genelinde Blender aracını kullanarak 3D tasarımlar yapmayı ve Roblox Studio üzerinden oyun tasarlayıp/kodlayıp yayınlamayı öğrendim. Bu kısımda Blender ile yaptığım tasarımları ve Roblox üzerinden yayınlamış olduğum online oyuna erişip inceleyebilirsiniz.
+* GAME_PROGRAMMING_AND_DESİGN: Bu ders kapsamında Blender aracını kullanarak 3D tasarımlar yaptım ve Roblox Studio üzerinden oyun tasarlayıp Lua dilinde kodlayarak yayınladım. Bu kısımda Blender ile yaptığım tasarımları inceleyip, Roblox üzerinden yayınlamış olduğum online oyuna erişebilirsiniz.
+
 
 * DATA_MINING: Bu kısımda Üniversite tarafından "DATA MINING Concepts and Techniques" kitabı üzerinden 
 15 hafta boyunca Veri Madenciliği ile ilgili işleyip uyguladığımız konular ve kitabın pdf'i yer almaktadır. 
