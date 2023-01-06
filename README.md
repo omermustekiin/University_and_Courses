@@ -41,6 +41,8 @@
 
 * OYUN PROGRAMLAMA ve TASARIM:
 
-* VERİ MADENCİLİĞİ: 
+* VERİ MADENCİLİĞİ: Bu kısımda Üniversite tarafından "DATA MINING Concepts and Techniques" kitabı üzerinden 
+15 hafta boyunca Veri Madenciliği ile ilgili işleyip uyguladığımız konular ve kitabın pdf'i yer almaktadır. 
+Ayrıca bu süreçte not tutarak oluşturduğum dökümanı incelemenizi tavsiye ederim.
 
 
