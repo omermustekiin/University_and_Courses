@@ -1,0 +1,32 @@
+game.Players.PlayerAdded:Connect(function(player)
+
+	local leaderstats = Instance.new("Folder")
+	leaderstats.Name = "leaderstats"
+	leaderstats.Parent=player
+
+	local bucks = Instance.new("IntValue")
+	bucks.Name = "Bucks"
+	bucks.Value = 0
+	bucks.Parent = leaderstats
+	
+	player.CharacterAdded:Connect(function(character)
+		character.Humanoid.WalkSpeed = 16
+		
+		character.Humanoid.Died:Connect(function()
+			
+			--Whenever somebody dies, this event will run
+
+			if character:FindFirstChild("GameTag") then
+				character.GameTag:Destroy()
+			end
+			
+			player:LoadCharacter()
+			
+		end)
+		
+		
+	end)
+
+
+
+end)
