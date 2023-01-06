@@ -39,7 +39,8 @@
 
 * YAZILIM KALİTE ve GÜVENCESİ TESTİ:
 
-* OYUN PROGRAMLAMA ve TASARIM:
+* OYUN PROGRAMLAMA ve TASARIM: Bu ders genelinde Blender aracını kullanarak 3D tasarımlar yapmayı ve Roblox Studio üzerinden oyun tasarlayıp yayınlamayı öğrendim.
+Bu kısımda Blender ile yaptığım tasarımları ve Roblox üzerinden yayınlamış olduğum online oyuna erişip inceleyebilirsiniz.
 
 * VERİ MADENCİLİĞİ: Bu kısımda Üniversite tarafından "DATA MINING Concepts and Techniques" kitabı üzerinden 
 15 hafta boyunca Veri Madenciliği ile ilgili işleyip uyguladığımız konular ve kitabın pdf'i yer almaktadır. 
