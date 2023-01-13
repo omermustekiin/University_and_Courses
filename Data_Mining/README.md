@@ -1,36 +1,62 @@
 Chapter 1: Introduction
 
 ❑ What Is & Why Data Mining?
+
 ❑ What Kind of Data Can Be Mined?
+
 • Database Data
+
 • Data Warehouses
+
 • Transactional Data
+
 • Other Kinds of Data
+
 ❑ What Kinds of Patterns Can Be Mined?
+
 • Class/Concept Description: Characterization and Discrimination
+
 • Mining Frequent Patterns, Associations, and Correlations
+
 • Classification and Regression for Predictive Analysis
+
 • Cluster Analysis
+
 • Outlier Analysis
+
 • Are All Patterns Interesting?
+
 ❑ What Technology Are Used?
+
 • Statistics
+
 • Machine Learning
+
 • Database Systems and Data Warehouses
+
 • Information Retrieval
+
 
 
 
 Chapter 2: Getting to Know Your Data
 
 ❑ Data Objects and Attribute Types
+
 • What Is an Attribute?
+
 • Nominal Attributes
+
 • Binary Attributes
+
 • Ordinal Attributes
+
 • Numeric Attributes
+
 • Discrete Versus Continuous Attributes
+
 ❑ Basic Statistical Descriptions of Data
+
 • Measuring the Central Tendency: Mean, Median, and Mode
 • Measuring the Dispersion of Data: Range, Quartiles, Variance, Standard Deviation, and Interquartile Range
 • Graphic Displays of Basic Statistical Descriptions of Data
