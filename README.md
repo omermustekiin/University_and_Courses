@@ -44,6 +44,6 @@
 15 hafta boyunca Veri Madenciliği ile ilgili işleyip uyguladığımız konular ve kitabın pdf'i yer almaktadır. 
 Ayrıca bu süreçte not tutarak oluşturduğum dökümanı incelemenizi tavsiye ederim.
 
-* SOFTWARE_QUALİTY_AND_ASSURANCE_TESTİNG: Bu kısımda Üniversite tarafından 15 haftalık süreçte almış olduğum Yazılım Kalite ve Güvence Testi dersinin sunumları ve araştırma ödevlerim yer almaktadır. Birim Test, TDD, Data Flow Charge ve Graph Coverage gibi konular ders kapsamında işlenilen bazı ana başlıklardır.
+* SOFTWARE_QUALİTY_AND_ASSURANCE_TESTİNG: Bu kısımda, Üniversite tarafından 15 haftalık süreçte almış olduğum Yazılım Kalite ve Güvence Testi dersinin sunumları ve araştırma ödevlerim yer almaktadır. Birim Test, TDD, Data Flow Charge ve Graph Coverage gibi konular ders kapsamında işlenilen bazı ana başlıklardır.
 
 
