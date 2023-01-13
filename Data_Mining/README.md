@@ -1,4 +1,5 @@
-Chapter 1: Introduction/n
+Chapter 1: Introduction
+
 ❑ What Is & Why Data Mining?
 ❑ What Kind of Data Can Be Mined?
 • Database Data
@@ -21,6 +22,7 @@ Chapter 1: Introduction/n
 
 
 Chapter 2: Getting to Know Your Data
+
 ❑ Data Objects and Attribute Types
 • What Is an Attribute?
 • Nominal Attributes
@@ -44,6 +46,7 @@ Chapter 2: Getting to Know Your Data
 
 
 Chapter 3: Data Preprocessing
+
 ❑ Data Preprocessing: An Overview
 • Data Quality: Why Preprocess the Data?
 • Major Tasks in Data Preprocessing
@@ -76,6 +79,7 @@ Chapter 3: Data Preprocessing
 
 
 Chapter 8: Classification: Basic Concepts
+
 ❑ Basic Concepts
 • What Is Classification?
 • General Approach to Classification
