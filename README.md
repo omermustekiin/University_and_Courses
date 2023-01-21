@@ -17,7 +17,7 @@
      
 * #### DATA STRUCTURES AND ALGORITMS
 
-     This section includes the topics and Cpp documents (Bubble Sort, Queue, Linked Lists vs...) that we covered in the 15-week Data Structures and Algorithms lesson by the University.
+     This section includes the topics and cpp documents (Bubble Sort, Queue, Linked Lists vs...) that we covered in the 15-week Data Structures and Algorithms lesson by the University.
  
 
 * #### COMPUTER NETWORKS
@@ -61,7 +61,7 @@
 
 * #### SOFTWARE ARCHITECTURE AND DESING
 
-     This section includes the topics and documents we covered in the Software Archiecture and Design lesson i took by the University.
+     This section includes the topics and cpp projects/documents we covered in the Software Archiecture and Design lesson i took by the University.
 
 
 * #### ADVANCED JAVA
