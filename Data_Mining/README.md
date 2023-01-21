@@ -1,8 +1,10 @@
 ## Chapter 1: Introduction
 
-❑ What Is & Why Data Mining?
+❑ #### What Is & Why Data Mining?
 
-❑ What Kind of Data Can Be Mined?
+
+❑ #### What Kind of Data Can Be Mined?
+
 
 • Database Data
 
@@ -12,7 +14,9 @@
 
 • Other Kinds of Data
 
-❑ What Kinds of Patterns Can Be Mined?
+
+❑ #### What Kinds of Patterns Can Be Mined?
+
 
 • Class/Concept Description: Characterization and Discrimination
 
@@ -26,7 +30,9 @@
 
 • Are All Patterns Interesting?
 
-❑ What Technology Are Used?
+
+❑ #### What Technology Are Used?
+
 
 • Statistics
 
@@ -38,10 +44,11 @@
 
 
 
-
 ## Chapter 2: Getting to Know Your Data
 
-❑ Data Objects and Attribute Types
+
+❑ #### Data Objects and Attribute Types
+
 
 • What Is an Attribute?
 
@@ -55,7 +62,9 @@
 
 • Discrete Versus Continuous Attributes
 
-❑ Basic Statistical Descriptions of Data
+
+❑ #### Basic Statistical Descriptions of Data
+
 
 • Measuring the Central Tendency: Mean, Median, and Mode
 
@@ -63,7 +72,9 @@
 
 • Graphic Displays of Basic Statistical Descriptions of Data
 
-❑ Measuring Data Similarity and Dissimilarity
+
+❑ #### Measuring Data Similarity and Dissimilarity
+
 
 • Data Matrix versus Dissimilarity Matrix
 
@@ -84,19 +95,25 @@
 
 ## Chapter 3: Data Preprocessing
 
-❑ Data Preprocessing: An Overview
+
+❑ #### Data Preprocessing: An Overview
+
 
 • Data Quality: Why Preprocess the Data?
 
 • Major Tasks in Data Preprocessing
 
-❑ Data Cleaning
+
+❑ #### Data Cleaning
+
 
 • Missing Values
 
 • Noisy Data
 
-❑ Data Integration
+
+❑ #### Data Integration
+
 
 • Entity Identification Problem---
 
@@ -106,7 +123,9 @@
 
 • Data Value Conflict Detection and Resolution
 
-❑ Data Reduction
+
+❑ #### Data Reduction
+
 
 • Overview of Data Reduction Strategies
 
@@ -126,7 +145,9 @@
 
 • Data Cube Aggregation
 
-❑ Data Transformation and Data Discretization
+
+❑ #### Data Transformation and Data Discretization
+
 
 • Data Transformation Strategies Overview
 
@@ -145,13 +166,17 @@
 
 ## Chapter 8: Classification: Basic Concepts
 
-❑ Basic Concepts
+
+❑ #### Basic Concepts
+
 
 • What Is Classification?
 
 • General Approach to Classification
 
-❑ Decision Tree Induction
+
+❑ #### Decision Tree Induction
+
 
 • Decision Tree Induction
 
@@ -163,13 +188,16 @@
 
 • Visual Mining for Decision Tree Induction
 
-❑ Bayes Classification Methods
+
+❑ #### Bayes Classification Methods
 
 • Bayes’ Theorem
 
 • Na¨ıve Bayesian Classification
 
-❑ Rule-Based Classification
+
+❑ #### Rule-Based Classification
+
 
 • Using IF-THEN Rules for Classification
 
@@ -177,7 +205,9 @@
 
 • Rule Induction Using a Sequential Covering Algorithm
 
-❑ Model Evaluation and Selection
+
+❑ #### Model Evaluation and Selection
+
 
 • Metrics for Evaluating Classifier Performance
 
@@ -191,7 +221,9 @@
 
 • Comparing Classifiers Based on Cost–Benefit and ROC Curves
 
-❑ Techniques to Improve Classification Accuracy
+
+❑ #### Techniques to Improve Classification Accuracy
+
 
 • Introducing Ensemble Methods
 
