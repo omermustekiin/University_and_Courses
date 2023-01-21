@@ -105,7 +105,7 @@
      
      
 * #### Version Controls: Git & Github
-      This section includes the topics and documents that I covered the 6 hours of Git & Github Course I received by Udemy.
+     This section includes the topics and documents that I covered the 6 hours of Git & Github Course I received by Udemy.
     
     
     
