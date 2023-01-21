@@ -1,0 +1,19 @@
+1.Normal Form
+-Virgülle ayrılmış, tek satıra dönüştütürülmesi gereken bişey var mı?
+-Tekrarlanan alanlar ortadan kaldırılır.
+-Her alanda tek değer bulunması istenir
+-Her satır bir primary key ile tanımlanır.
+
+2.Normal Form
+-Bir primary key e bütün diğer kolonların tam bağlı olması ve herhangi bir alt kümesine bağlı olmaması.
+-Varlık ilişkilerini tespit et.
+-Kismi bağımlılıklar ortadan kaldırılır.
+
+3.Normal Form 
+-Geçişli bağımlılıklar ortadan kaldırılır.
+
+
+
+Bir ders farklı hocalar tarafından verilirse Hocayla Dersler arasında "çoka çok ilişki"
+Her dersi sadece ilgili hoca veriyorsa Derslerle Hoca arasında "bire çok ilişki"
+
