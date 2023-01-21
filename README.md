@@ -54,20 +54,30 @@
      This section includes the topics and documents we covered in the Software Development Standards and Project Management lesson i took by the University.
 
 
-* SOFTWARE_ARCHITECTURE_and_DESING: This section includes the topics and documents we covered in the Software Archiecture and Design lesson i took by the University.
+* #### SOFTWARE_ARCHITECTURE_and_DESING
+
+     This section includes the topics and documents we covered in the Software Archiecture and Design lesson i took by the University.
 
 
-* ADVANCED_JAVA: In this section, i am sharing the codes and topics that we have written JAVA language (OOP) using the Eclipse IDE tool.
+* #### ADVANCED_JAVA
+
+     In this section, i am sharing the codes and topics that we have written JAVA language (OOP) using the Eclipse IDE tool.
 
 
-* GAME_PROGRAMMING_AND_DESIGN: Within the scope of this lesson, i made 3D designs using the Blender tool and i designed a game via Roblox Studio and coded it in Lua language and published it. In this section, you can review the designs i made with Blender and access the online game i published on Roblox.
+* #### GAME_PROGRAMMING_AND_DESIGN
+
+     Within the scope of this lesson, i made 3D designs using the Blender tool and i designed a game via Roblox Studio and coded it in Lua language and published it. In this section, you can review the designs i made with Blender and access the online game i published on Roblox.
 
 
-* DATA_MINING: This section includes the topics and documents we covered in the 15-week Data Mining lesson i took by the University.
-This lesson is based on the book "DATA MINING Concepts and Techniques".
-I also recommend you to review the document i created by taking notes during this process.
+* #### DATA_MINING
+
+     This section includes the topics and documents we covered in the 15-week Data Mining lesson i took by the University.
+     This lesson is based on the book "DATA MINING Concepts and Techniques".
+     I also recommend you to review the document i created by taking notes during this process.
 
 
-* SOFTWARE_QUALITY_AND_ASSURANCE_TESTING: In this section, there are presentations and research papers of the Software Quality and Assurance Test lesson that i took by the University in a 15-week period. Topics such as Unit Testing, TDD, Data Flow Chart and Graph Coverage are some of the main topics covered in this lesson.
+* #### SOFTWARE_QUALITY_AND_ASSURANCE_TESTING
+
+     In this section, there are presentations and research papers of the Software Quality and Assurance Test lesson that i took by the University in a 15-week period. Topics such as Unit Testing, TDD, Data Flow Chart and Graph Coverage are some of the main topics covered in this lesson.
 
 
