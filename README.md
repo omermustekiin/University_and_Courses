@@ -1,6 +1,8 @@
 # Content
 
-* ADVANCED_DATA_BASE_SQL: This section includes the topics that we have covered in the 15-week Advanced Database education by the University and the basic and advanced level SQL commands and topics that we learned using Oracle DB.
+* #### ADVANCED_DATA_BASE_SQL
+
+This section includes the topics that we have covered in the 15-week Advanced Database education by the University and the basic and advanced level SQL commands and topics that we learned using Oracle DB.
 
 
 * CRYPTHOLOGY: This section includes the topics that we covered in the 15-week Crypthology lesson by the University.
