@@ -1,6 +1,6 @@
 ## Chapter 1: Introduction
 
-❑#### What Is & Why Data Mining?
+❑ ## What Is & Why Data Mining?
 
 
 ❑ #### What Kind of Data Can Be Mined?
