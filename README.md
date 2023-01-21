@@ -22,18 +22,31 @@
      Lesson Objectives: To gain basic understanding about the use and development of computer networks, to gain knowledge and skills on layered architecture, topologies, protocols and data communication.
   
      Lesson plan:
+     
      Network concepts and definitions, usage purposes
+     
      Network architecture and classification
+     
      Protocol layouts (data transfer with packets)
+     
      Network layers and connected/connectionless services
+     
      Network software content, fault detection
+     
      Reference models (OSI and TCP/IP)
+     
      Data transmission medium, wired and wireless communication. satellite communications
+     
      Data transmission medium, bandwidth, transmission over baseband and passband network hardware
+     
      Network design application
+     
      Data link layer, error control coding algorithms
+     
      Security in networks
+     
      Networks today and in the future
+     
 
  
 * #### SOFTWARE_DEVELOPMENT_STANDARDS_and_PROJECT_MANAGEMENT
