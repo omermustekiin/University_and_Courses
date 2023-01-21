@@ -99,7 +99,7 @@
      This section includes the topics and document I covered the 2+ hours of Agile Methodologies and SCRUM Training I received by BTK Academy.
      
      
-* #### SQL-MySQL-MsSQL
+* #### Applied SQL Database Lessons: MySQL & MsSQL
      This section includes the topics that I covered the 8+ hours of SQL-MySQL-MsSQL Course I received by Udemy.
      
      
