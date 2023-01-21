@@ -86,6 +86,8 @@
      In this section, there are presentations and research papers of the Software Quality and Assurance Test lesson that i took by the University in a 15-week period. Topics such as Unit Testing, TDD, Data Flow Chart and Graph Coverage are some of the main topics covered in this lesson.
 
 
+## ------------------------------ Courses & Trainings ------------------------------
+
 * #### API ve API Testing
      This section includes the topics and document I covered the 2+ hours of API ve API Testing Training I received by BTK Academy.
 
