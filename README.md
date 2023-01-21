@@ -17,7 +17,7 @@
      
 * #### DATA STRUCTURES AND ALGORITMS
 
-     This section includes the topics and cpp documents (Bubble Sort, Queue, Linked Lists vs...) that we covered in the 15-week Data Structures and Algorithms lesson by the University.
+     This section includes the topics and cpp projects/documents (Bubble Sort, Queue, Linked Lists vs...) that we covered in the 15-week Data Structures and Algorithms lesson by the University.
  
 
 * #### COMPUTER NETWORKS
