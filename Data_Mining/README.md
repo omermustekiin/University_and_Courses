@@ -115,7 +115,7 @@
 #### ❑ Data Integration
 
 
-• Entity Identification Problem---
+• Entity Identification Problem
 
 • Redundancy and Correlation Analysis
 
