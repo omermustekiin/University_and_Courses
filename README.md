@@ -88,6 +88,9 @@
 
 ## Courses & Trainings
 
+* #### Mobile Application Development with Flutter
+     This section includes the topics and documents that I covered the 40+ hours of Flutter Course I received by Udemy. Within the scope of this course, I made a total of 12 applications at the basic, intermediate and advanced levels. I recommend you to read the document that I have created within the scope of each application and course in general.
+
 * #### API ve API Testing
      This section includes the topics and document I covered the 2+ hours of API ve API Testing Training I received by BTK Academy.
 
@@ -99,3 +102,22 @@
 * #### SQL-MySQL-MsSQL
      This section includes the topics that I covered the 8+ hours of SQL-MySQL-MsSQL Course I received by Udemy.
      
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
