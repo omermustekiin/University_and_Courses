@@ -1,0 +1,140 @@
+Depend on the key         1.Normal Form
+The whole key             2.Normal Form   
+Nothing but the key       3.Normal Form
+
+
+"Appplication builder kullanarak uygulama geliştirme konusunda ilerlemenizi tavsiye ederim."
+
+
+SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME, JOB_ID FROM EMPLOYEES
+
+WHERE job_id = 'SA_REP';
+
+DESC EMPLOYEES
+
+SELECT country_id, country_name FROM countries;
+
+SELECT last_name, salary, salary + 500 FROM employees;
+SELECT last_name, salary, salary + 200 + 50 + 70 as toplam FROM employees;
+SELECT last_name, salary, 2*(salary + 200 + 50 + 70) as toplam FROM employees;
+
+select employee_id, commission_pct, NVL(commission_pct,0)*salary FROM employees;  NONVALUE İÇİN
+
+
+
+table        --verileri koyduğumuz adresler
+column       --table ın sütünları   
+row          --table ın satırları
+field        --sütunun başka bir adı, daha geniş bir anlam ifade eder. 
+primary key  --sütünların bağımlılığı hakkında, belirlenen ve belirsiz satırlar vardır.  
+foreign key  --tablolar arasındaki ilişkilerde kullanılır.
+
+
+TABLO ÖZELLİKLERİ
+
+1) Sütunlar tek değerli olmalı. Herhangi row daki sütunun içerdiği değer tek olacaktır.
+2) Sütunlardaki değerler aynı cinsten değerler olacak.
+3) Her bir rowun aslında kendisi başlı başına bir oluşum ifade ettiğinden, tekrar etmemeli. (Each row is unique)
+4) Sütunların sırasının önemi yok. 
+5) Sequence of rows is insignificant. Diskteki yerleşimin önemsizliğinden bahsediyor
+6) Sütunlara ad verirken, bir tabloda sadece bir tane özgü başlık adı olabilir.
+
+
+Datalar veri tabanında blok blok oluşur. Bir bloğa kaç row tekabül edeceği orada hesaba katılır.
+
+
+PROGRAMLAMA DİLLERİNİN GRUPLANDIRILMASI
+
+Data Manipulation Language (DML):  Uç kullanıcların yaptığı işlemlerdir. İNSERT, UPDATE, DELETE or MERGE komutları. Oluşan objeler üstünde çalışma.   
+  
+Data Definitaon Languag (DDL): Developer tarafından, temel objelerin oluşturulmasıyla ilgili işlemler. 
+
+Transaction Control Language (TCL): COMMIT, ROLLBACK, SAVEPOINT. Veri tablodaki değerleri kontrol eder, dataları bu komutlarla güncelleyebiliriz. 
+x saat sonrası yaptığın tüm değişiklikleri savepoınt ile geri alabiliriz.
+
+Data Control Language (DCL): Yetkilendirme ile alakalı. Veri tabanında bir select yapmamız bile GRANT ile alakalı.
+O kullanıcının select yetkisi var mı? Varsa hangi alanlarda? REVOKE, geri alır yetkiyi.
+
+
+
+-SELECT "Sütun adı" veya "*" hepsi demek olur.
+-Her SQL cümlesi tek bir cümledir.
+-Projection (dikey seçim, sütun seçim) vs Selection (yatay seçim)
+**SELECT <Projection elemanı olan sütun adı>**
+
+NULL değerinde outputta - olarak gözükür. NVL ile değiştirilebilir.
+
+Aliases = as toplam diyerek verdiğimiz yeni sütun başlığımızdır.
+
+
+1-ROW
+2-PRİMARY KEY
+3-TABLE
+4-FOREİGN KEY
+5-İLİŞKİSEL VERİ TABANI
+6-FİELD
+7-DML
+8-DDL
+9-TCL
+10-DCL
+
+
+1- 9?
+2-SHIFST ASSIGNMET UZERINDEN KURULUYOR
+3-8
+4-2 (SELECT * FROM F_PROMOTIONAL_MENUS)
+5-2 TANE FOREİGN KEY (CONSTRAİNTSE GEL GÖR)
+6-...
+7-...
+
+
+1-Join
+2-Aritmetik işlemciler
+3-Column
+4-Projection
+5-Null
+6-Aliases
+7-Aritmetik ekspıreşyın
+8-SELECTİON
+9-SELECT
+10-
+11-FROM
+12-KEYWORDS
+
+Birden fazla kılavuzu bır araya getirince statment cumle olur.
+
+1)Select
+2)SELECT last_name as Client, email as "Email Adress" FROM D_CLIENTS;
+3)1.05 ile çarpmalıydı
+4)c
+5)b
+6)FROM employees kılavuz, cumlenın tamamı statments, select veya from da diğeri
+7)selectıon, join, projection
+8)c
+9)c
+10)b
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
