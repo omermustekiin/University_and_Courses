@@ -13,6 +13,11 @@
 * #### COMPUTER GRAPHICS 
 
      This section includes the topics and documents that we covered in the 15-week Computer Graphics lesson by the University.
+     
+     
+* #### DATA STRUCTURES AND ALGORITMS
+
+     This section includes the topics and Cpp documents (Bubble Sort, Queue, Linked Lists vs...) that we covered in the 15-week Data Structures and Algorithms lesson by the University.
  
 
 * #### COMPUTER NETWORKS
