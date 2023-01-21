@@ -24,9 +24,9 @@
 
      *Lesson Content:* Basic networking concepts and definitions, protocol hierarchy, reference models, layers, error detection, osi and tcp/ip protocols, network architecture.
   
-     Lesson Objectives: To gain basic understanding about the use and development of computer networks, to gain knowledge and skills on layered architecture, topologies, protocols and data communication.
+     *Lesson Objectives:* To gain basic understanding about the use and development of computer networks, to gain knowledge and skills on layered architecture, topologies, protocols and data communication.
   
-     Lesson plan:
+     *Lesson plan:*
      
      Network concepts and definitions, usage purposes
      
