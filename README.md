@@ -5,7 +5,7 @@
      This section includes the topics that we have covered in the 15-week Advanced Database education by the University and the basic and advanced level SQL commands and topics that we learned using Oracle DB.
 
 
-* #### CRYPTOGRAPHY
+* #### CRYPTOLOGY
 
      This section includes the topics that we covered in the 15-week Crypthology lesson by the University.
 
