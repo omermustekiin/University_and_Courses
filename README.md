@@ -17,7 +17,17 @@
      
 * #### DATA STRUCTURES AND ALGORITMS
 
-     This section includes the topics and cpp projects/documents (Bubble Sort, Queue, Linked Lists vs...) that we covered in the 15-week Data Structures and Algorithms lesson by the University.
+     This section includes this cpp projects/documents that we covered in the 15-week Data Structures and Algorithms lesson by the University:
+     
+     Queue
+     Binary Search Recursive & Binary Search Iterative
+     Bubble Sort
+     Circular Buffer
+     Linear Search
+     Linked List
+     Merge Sort
+     Quick Sort
+     Selection Sort
  
 
 * #### COMPUTER NETWORKS
