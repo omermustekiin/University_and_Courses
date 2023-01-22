@@ -93,11 +93,11 @@
 
 
 * #### API ve API Testing
-     This section includes the topics and document I covered the 2+ hours of API ve API Testing Training I received by BTK Academy.
+     This section includes the topics and grades I covered the 2+ hours of API ve API Testing Training I received by BTK Academy.
 
 
 * #### Agile Methodologies and SCRUM
-     This section includes the topics and document I covered the 2+ hours of Agile Methodologies and SCRUM Training I received by BTK Academy.
+     This section includes the topics and grades I covered the 2+ hours of Agile Methodologies and SCRUM Training I received by BTK Academy.
      
      
 * #### Applied SQL Database Lessons: MySQL & MsSQL
@@ -105,7 +105,7 @@
      
      
 * #### Version Controls: Git & Github
-     This section includes the topics and documents that I covered the 6+ hours of Git & Github Course I received by Udemy.
+     This section includes the topics and grades that I covered the 6+ hours of Git & Github Course I received by Udemy.
     
     
     
