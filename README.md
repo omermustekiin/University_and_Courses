@@ -104,7 +104,7 @@
      This section includes the topics that I covered the 8+ hours of SQL-MySQL-MsSQL Course I received by Udemy.
      
      
-* #### Version Controls: Git & Github
+* #### Version Controls: Git & Github (Coming soon...)
      This section includes the topics and grades that I covered the 6+ hours of Git & Github Course I received by Udemy.
     
     
