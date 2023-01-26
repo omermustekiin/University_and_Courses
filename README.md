@@ -21,15 +21,19 @@
      
      Queue
      
-     Binary Search Recursive & Binary Search Iterative
+     Binary Search Recursive
      
-     Bubble Sort
+     Binary Search Iterative
      
      Circular Buffer
      
      Linear Search
      
      Linked List
+         
+     Bubble Sort
+     
+     Insertion Sort
      
      Merge Sort
      
