@@ -26,7 +26,7 @@
 
 11.2 Summary of ILFs, RETs, and DETs Counted
 
-12-AGİLE METHODS / Scrum
+12-AGILE METHODS / Scrum
 
 13-Dynamic System Development Method
 
