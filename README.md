@@ -115,15 +115,17 @@
      This section includes the topics and documents that I covered the 40+ hours of Flutter Course I received by Udemy. Within the scope of this course, I made a total of 12 applications at the basic, intermediate and advanced levels. In this section, you can access the course topics, content and the contents of some important applications made within the course.
 
 
-* #### API ve API Testing
+* #### 
+<a href="https://github.com/omermustekiin/University_and_Courses/blob/main/API%20ve%20API%20Testing%20Training.pdf"> API ve API Testing </a>
+
      This section includes the topics and grades I covered the 2+ hours of API ve API Testing Training I received by BTK Academy.
 
 
-* #### Agile Methodologies and SCRUM
+* #### <a href="https://github.com/omermustekiin/University_and_Courses/blob/main/Agile%20Methodologies%20and%20SCRUM%20Training.pdf">  Agile Methodologies and SCRUM </a>
      This section includes the topics and grades I covered the 2+ hours of Agile Methodologies and SCRUM Training I received by BTK Academy.
      
      
-* #### Applied SQL Database Lessons: MySQL & MsSQL
+* #### <a href="https://github.com/omermustekiin/University_and_Courses/blob/main/SQL-MySQL-MsSQL%20Course.pdf">  Applied SQL Database Lessons: MySQL & MsSQL </a>
      This section includes the topics that I covered the 8+ hours of SQL-MySQL-MsSQL Course I received by Udemy.
      
      
