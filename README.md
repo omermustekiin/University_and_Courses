@@ -82,17 +82,17 @@
      This section includes the topics and documents we covered in the Software Development Standards and Project Management lesson i took by the University.
 
 
-* #### SOFTWARE ARCHITECTURE AND DESING
+* #### <a href="https://github.com/omermustekiin/University_and_Courses/tree/main/SoftwareArchıtectureAndDesign">  SOFTWARE ARCHITECTURE AND DESING </a>
 
      This section includes the topics and cpp projects/documents we covered in the Software Archiecture and Design lesson i took by the University.
 
 
-* #### <a href="https://github.com/omermustekiin/University_and_Courses/tree/main/AdvancedJava" style="color: black"> ADVANCED JAVA </a>
+* #### <a href="https://github.com/omermustekiin/University_and_Courses/tree/main/AdvancedJava"> ADVANCED JAVA </a>
 
      In this section, i am sharing the codes and topics that we have written JAVA language (OOP) using the Eclipse IDE tool.
 
 
-* #### GAME PROGRAMMING AND DESIGN
+* ####<a href="https://github.com/omermustekiin/University_and_Courses/tree/main/GameProgrammingAndDesign">  GAME PROGRAMMING AND DESIGN  </a>
 
      Within the scope of this lesson, i made 3D designs using the Blender tool and i designed a game via Roblox Studio and coded it in Lua language and published it. In this section, you can review the designs i made with Blender and access the online game i published on Roblox.
 
