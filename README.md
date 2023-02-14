@@ -1,6 +1,6 @@
 ## University
 
-* #### <a href="https://github.com/omermustekiin/University_and_Courses/tree/main/Advanced_Database_SQL"> ADVANCED DATA BASE SQL </a>
+* #### <a href="https://github.com/omermustekiin/University_and_Courses/tree/main/Advanced_Data_Base_SQL"> ADVANCED DATA BASE SQL </a>
 
      This section includes the topics that we have covered in the 15-week Advanced Database education by the University and the basic and advanced level SQL commands and topics that we learned using Oracle DB.
 
@@ -15,7 +15,7 @@
      This section includes the topics and documents that we covered in the 15-week Computer Graphics lesson by the University.
      
      
-* #### <a href="https://github.com/omermustekiin/University_and_Courses/tree/main/Data_Structers_and_Algoritms"> DATA STRUCTURES AND ALGORITMS </a>
+* #### <a href="https://github.com/omermustekiin/University_and_Courses/tree/main/Data Structures and Algorithms"> DATA STRUCTURES AND ALGORITMS </a>
 
      This section includes this cpp projects/documents that we covered in the 15-week Data Structures and Algorithms lesson by the University:
      
@@ -77,12 +77,12 @@
      
 
  
-* #### <a href="https://github.com/omermustekiin/University_and_Courses/tree/main/Software_Development_Standarts_and_Project_Management"> SOFTWARE DEVELOPMENT STANDARDS AND PROJECT MANAGEMENT  </a>
+* #### <a href="https://github.com/omermustekiin/University_and_Courses/tree/main/Software_Development_Standards_and_Project_Management"> SOFTWARE DEVELOPMENT STANDARDS AND PROJECT MANAGEMENT  </a>
 
      This section includes the topics and documents we covered in the Software Development Standards and Project Management lesson i took by the University.
 
 
-* #### <a href="https://github.com/omermustekiin/University_and_Courses/tree/main/Software_Archıtecture_and_Design">  SOFTWARE ARCHITECTURE AND DESING </a>
+* #### <a href="https://github.com/omermustekiin/University_and_Courses/tree/main/Software_Architechture_and_Design">  SOFTWARE ARCHITECTURE AND DESING </a>
 
      This section includes the topics and cpp projects/documents we covered in the Software Archiecture and Design lesson i took by the University.
 
