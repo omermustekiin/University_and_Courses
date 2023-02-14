@@ -111,7 +111,7 @@
 
 ## Courses & Trainings 
 
-* #### <a href="[https://github.com/omermustekiin/University_and_Courses/tree/main/Data_Mining](https://github.com/omermustekiin/University_and_Courses/tree/main/Mobile%20Apllication%20Development%20with%20Flutter)"> Mobile Application Development with Flutter </a> 
+* #### <a href="https://github.com/omermustekiin/University_and_Courses/tree/main/Mobile%20Apllication%20Development%20with%20Flutter"> Mobile Application Development with Flutter </a> 
      This section includes the topics and documents that I covered the 40+ hours of Flutter Course I received by Udemy. Within the scope of this course, I made a total of 12 applications at the basic, intermediate and advanced levels. In this section, you can access the course topics, content and the contents of some important applications made within the course.
 
 
